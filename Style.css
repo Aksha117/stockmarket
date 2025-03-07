@@ -1,0 +1,102 @@
+/* Gradient Blue Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1E3C72, #2A5298);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Input */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 3D Button with Glow Effect */
+button {
+    width: 85%;
+    padding: 12px;
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), inset -1px -1px 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Updates & Errors */
+#updateMessage {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: yellow;
+}
+
+/* Prediction Result */
+#stockData {
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    
+    input, button {
+        width: 100%;
+    }
+}

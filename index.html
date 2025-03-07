@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction App with ML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TechnoFundamental Stock Predictor</h1>
+        <p>Enter a stock symbol (e.g., AAPL, TSLA, MSFT):</p>
+
+        <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol" onkeypress="handleKeyPress(event)">
+        <button onclick="getStockPrediction()">Predict</button>
+
+        <div id="updateMessage"></div>
+        <div id="stockData" class="fade-in"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
